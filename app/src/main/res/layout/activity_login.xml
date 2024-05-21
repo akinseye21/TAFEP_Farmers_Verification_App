@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="20dp"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Welcome Back!\nLet's get you started again!"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserratbold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter the correct information\nfor the following fields"
+            android:textColor="#737373"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserratmedium"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="40dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:id="@+id/email"
+                android:fontFamily="@font/montserratbold"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edt_1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textSize="15dp"
+                android:background="#fff"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="#363636"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:id="@+id/password"
+                android:fontFamily="@font/montserratbold"
+                android:inputType="textPassword"
+                android:background="@drawable/edt_1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="15dp"
+                android:background="#fff"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="#363636"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textSize="15dp"
+            android:textColor="#1b5e1f"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/montserratbold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/green_btn_2"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="20dp"
+            android:id="@+id/login"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:text="Create Account"
+            android:textColor="#1b5e1f"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="20dp"
+            android:id="@+id/createaccount"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

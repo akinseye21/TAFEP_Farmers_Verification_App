@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp"
+    tools:context=".CreateAccount">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/back"
+        android:src="@drawable/ic_back"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Let's Create Your Acoount"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:fontFamily="@font/montserratbold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tell us a bit of yourself as you\nget registered"
+                android:textColor="#737373"
+                android:textSize="15dp"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_marginTop="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/email"
+                    android:fontFamily="@font/montserratbold"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/edt_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#363636"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/name"
+                    android:fontFamily="@font/montserratbold"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/edt_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#363636"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/phone"
+                    android:fontFamily="@font/montserratbold"
+                    android:inputType="number"
+                    android:background="@drawable/edt_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#363636"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/lga"
+                    android:background="@drawable/edt_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select LGA"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#363636"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/address"
+                    android:fontFamily="@font/montserratbold"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/edt_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#363636"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/password"
+                    android:fontFamily="@font/montserratbold"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edt_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#363636"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/confirmpass"
+                    android:fontFamily="@font/montserratbold"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edt_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Password"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#363636"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/green_btn_2"
+                android:text="Continue"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:id="@+id/continue1"
+                android:fontFamily="@font/montserratbold"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view2"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Let's get some additional information"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:fontFamily="@font/montserratbold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tell us a bit of yourself as you\nget registered"
+                android:textColor="#737373"
+                android:textSize="15dp"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_marginTop="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/accountnumber"
+                    android:fontFamily="@font/montserratbold"
+                    android:inputType="number"
+                    android:background="@drawable/edt_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Number"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#363636"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/montserratbold"
+                    android:id="@+id/accountname"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/edt_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Name"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#363636"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/bankname"
+                    android:background="@drawable/edt_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Name"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#363636"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/green_btn_2"
+                android:text="Continue"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:id="@+id/continue2"
+                android:fontFamily="@font/montserratbold"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

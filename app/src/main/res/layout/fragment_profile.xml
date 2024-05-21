@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.FragmentProfile">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f0f0f0"
+        android:dividerHeight="0.1dp"
+        android:id="@+id/listview_farmers"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Sorry, you have not saved any user to the Database for synchronisation"
+        android:fontFamily="@font/montserratmedium"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:id="@+id/nodata"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:drawableTop="@drawable/sync"/>
+
+</FrameLayout>

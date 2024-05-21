@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_ward">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/van"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ward 1"
+                android:textSize="12dp"
+                android:id="@+id/wardname"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratmedium"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total\nFarms:"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratbolditalic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="500"
+                android:textSize="15dp"
+                android:id="@+id/totalfarm"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratblack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verified\nFarms:"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratbolditalic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="010"
+                android:textSize="15dp"
+                android:id="@+id/verifiedfarm"
+                android:textColor="@color/green2"
+                android:fontFamily="@font/montserratblack"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Tafep" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Tafep" parent="Base.Theme.Tafep" />
+
+    <style name="MyCustomTabText2" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">8dp</item>
+        <item name="fontFamily">@font/montserratmedium</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+</resources>
